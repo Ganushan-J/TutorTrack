@@ -10,7 +10,14 @@ def index():
 def students():
     return render_template("students.html")
 
+@app.route("/students/add")
+def add_student():
+    return render_template("add_student.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=5001)
+
+
+
 
