@@ -6,22 +6,23 @@
     <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-<form>
     <h1> Add Student </h1>
+<form method="POST">
 
     <label> Name </label>
-    <input type="text">
+    <input type="text" name="name" required>
+
 
     <label> Year Group </label>
-    <input type="text">
+    <input type="text" name="year_group" required>
 
     <label> Exam Board </label>
-    <input type="text">
+    <input type="text" name="exam_board">
 
     <label> Grade </label>
-    <input type="text">
+    <input type="text" name="grade">
 
-    <button type="'Submit">Add Student</button>
+    <button type="'submit">Add Student</button>
 
 </form>
 
